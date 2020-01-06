@@ -1,0 +1,106 @@
+html, body, h1, h2, h3, header, section, footer {margin: 0; padding: 0}
+body, h1, h2, h3, button {font:normal 1em Helvetica}
+body {background:#ddd; line-height: 1.2em}
+main {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+footer {
+  margin: 1em 0 2% 0;
+  text-align: center;
+  font-size: 8pt;
+}
+footer a {
+  color: #88a;
+}
+h1 {font-size: 9pt; color: #bbb; margin: 0.5em; align-self: flex-end}
+h2 {
+  margin: 4px 10px;
+  width: 1.8em; 
+  height: 1.8em; 
+  font: bold 35pt/1.8em Helvetica;
+  text-align: center; 
+  border-radius: 50%; 
+  background:#fff linear-gradient(175deg, #fff 25%, #ccc 100%);
+  border: 1px solid #bbb;
+  box-shadow: 1px 1px 5px #ccc;
+}
+section {
+  margin: 2%;
+  padding: 1em;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 1px 1px 5px #aaa;
+  text-align: center;
+}
+
+#visitStats {
+  margin-top: 0.7em;
+  color: #999;
+  font-size: 11pt;
+}
+
+section#actions {
+  display: flex; 
+  flex-flow: column wrap; 
+  align-items: stretch;
+}
+
+code#url {
+  display: block;
+  max-height: 2.4em;
+  overflow: auto;
+  word-break: break-all;
+  border-radius: 5px;
+  margin: 0.7em auto 0 auto;
+  padding: 5px 8px;
+  background: #f4f4f4;
+  font-size: 12pt;
+  line-height: 1.6em;
+  text-align: left;
+}
+
+code#url:focus {
+  max-height: none;
+}
+
+code#shortDomain {
+  word-break: break-all;
+  background: #f4f4f4;
+  padding: 0.2em 1em;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 14pt;
+  line-height: 2.6em;
+  letter-spacing: 0.05em;
+}
+
+#subdomain {
+  color: #bbb;
+}
+
+code.email {
+  background: #f4f4f4;
+  padding: 0.2em 0.5em;
+  margin-right: 0.1em;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 14pt;
+  line-height: 2.5em;
+}
+
+section#actions {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+}
+
+section#actions button {
+  padding: 0.5em 1em;
+  margin: 0.5em 2%;
+}

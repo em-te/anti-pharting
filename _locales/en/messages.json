@@ -1,0 +1,49 @@
+{
+  "extensionName": {
+    "message": "PhartShield"
+  },
+
+  "extensionDescription": {
+    "message": "PhartShield offers real-time protection against pharting attacks and other Internet nasties and works offline guarding your identity"
+  },
+
+  "youAreOpeningUrl": {
+    "message": "You are trying to access this URL:"
+  },
+
+  "theWebsiteIsAtDomain": {
+    "message": "That website is located at:"
+  },
+
+  "visitCountNone": {
+    "message": "You have never visited this site before."
+  },
+
+  "visitCountOne": {
+    "message": "You have visited this $1 time recently."
+  },
+
+  "visitCountSome": {
+    "message": "You have visited this $1 times recently."
+  },
+
+  "visitCountMany": {
+    "message": "You have visited this many times recently."
+  },
+
+  "yourEmailsWillBeShared": {
+    "message": "If you continue, this email address will be shared with the website:"
+  },
+
+  "goBtn": {
+    "message": "Continue"
+  },
+
+  "replaceBtn": {
+    "message": "Continue as '$1'"
+  },
+
+  "whatispharting": {
+    "message": "What is Pharting?"
+  }
+}
