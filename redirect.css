@@ -11,12 +11,14 @@ header {
   align-items: center;
 }
 footer {
-  margin: 1em 0 2% 0;
+  margin-bottom: 2%;
   text-align: center;
-  font-size: 8pt;
-}
-footer a {
-  color: #88a;
+  font-size: 9pt;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: #999;
 }
 h1 {font-size: 9pt; color: #bbb; margin: 0.5em; align-self: flex-end}
 h2 {
@@ -103,4 +105,17 @@ section#actions {
 section#actions button {
   padding: 0.5em 1em;
   margin: 0.5em 2%;
+}
+
+footer > * {
+  margin: 0.5em 0;
+  vertical-align: middle;
+}
+
+footer a {
+  color: #88a;
+}
+
+footer #turnOff:checked ~ span {
+  color: #d00;
 }
