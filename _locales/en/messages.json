@@ -45,5 +45,13 @@
 
   "whatispharting": {
     "message": "What is Pharting?"
+  },
+
+  "turnOff": {
+    "message": "Turn off PhartShield until browser is restarted"
+  },
+
+  "bookmarkTitle": {
+    "message": "PhartShield Trusted: $1"
   }
 }
