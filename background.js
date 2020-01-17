@@ -1,16 +1,18 @@
 "use strict";
 
-const EMAIL = /[\w\-\_]+(?:@|%40)(?:[\w\-\_]+\.)+\w+/;
+const EMAIL = /[\w\-]+(?:@|%40)(?:[\w\-]+\.)+\w+/;
 
-let whitelist = {};
+let active = true;
+
+//let whitelist = {};
 
 //used to temporarily store data for the redirection page.
-//After the redirection page retrieves this data during onload
+//After the redirection page retrieves this data during its onload
 //we clear it immediately
 let processing = {};
 
-//used by the redirection page to set a flag before sending the HTTP
-//request so that we can skip over it. The HTTP request will clear 
+//used by the redirection page to set a flag before redirecting away
+//so that we can skip over it. The HTTP request handler will clear 
 //this flag automatically
 let bypass = {};
 
@@ -21,9 +23,9 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
 
     url = new URL(url);
 
-    if(whitelist[url.host]) return;
-
     let tabStr = "" + tabId;
+
+    //if(whitelist[url.origin]) return;
 
     //sometimes onBeforeSendHeaders is called twice
     if(processing[tabStr]) return;
@@ -32,8 +34,7 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
     //selects to view the page normally
     if(bypass[tabStr]) {
       let referer = bypass[tabStr].referer;
-
-      delete bypass[tabStr];
+      bypass[tabStr].referer = null;
 
       //restore the referer during bypass if available
       if(referer) {
@@ -49,7 +50,7 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
         return {requestHeaders};
       }
 
-    } else {
+    } else if(active) {
 
       if(originUrl) {
         originUrl = new URL(originUrl);
@@ -101,18 +102,28 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
 
 chrome.runtime.onMessage.addListener(
   (msg, sender, reply) => {
-    if(msg.getUrl && sender.tab) {
-      //when the redirection page loads it will call this to get the data for it's tab
-      let tabStr = "" + sender.tab.id;
-      let data = processing[tabStr];
-      if(data) delete processing[tabStr];
-      reply(data);
 
-    } else if(msg.bypass && sender.tab) {
-      //if the redirection page wants to continue loading the intercepted URL
-      //it will call this to add a bypass flag before trying to load the page
-      bypass["" + sender.tab.id] = msg.bypass;
-      reply(null);
+    if(sender.tab) {
+      let tabStr = "" + sender.tab.id;
+
+      if(msg.getUrl) {
+        //when the redirection page loads it will call this to get the data for it's tab
+        let data = processing[tabStr];
+        if(data) delete processing[tabStr];
+
+        reply(data);
+
+      } else if(msg.bypass) {
+        //if the redirection page wants to continue loading the intercepted URL
+        //it will call this to add a bypass flag before trying to load the page
+        msg.bypass.timer = setTimeout(() => { delete bypass[tabStr]; }, 10000);
+        bypass[tabStr] = msg.bypass;
+
+        reply(null);
+
+      } else if(msg.turnOff) {
+        active = msg.turnOff.value;
+      }
     }
   }
 );

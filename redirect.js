@@ -77,12 +77,13 @@ function init(data, firstVisit) {
     chrome.history.search({
       text: url.origin,
       startTime: Date.now()-365*24*60*60000,
+      endTime: Date.now()-60000,
       maxResults: 10
     }, list => {
       if(list && list.length > 0) {
         $("visitCount").textContent = chrome.i18n.getMessage(
           (list.length >= 10 ? "visitCountMany" : list.length > 1 ? "visitCountSome" : "visitCountOne"),
-          list.length
+          "" + list.length
         );
       } else {
         $("visitCount").textContent = chrome.i18n.getMessage("visitCountNone");
@@ -118,6 +119,31 @@ $("replaceBtn").onclick = e => {  //load "randUrl" into tab
 $("goBtn").onclick = e => {  //load "url" into tab
   if(url) leavePage();
 };
+
+$("turnOff").onclick = e => {
+  chrome.runtime.sendMessage({
+    turnOff: {value: !$("turnOff").checked}
+  });
+};
+
+chrome.bookmarks.onCreated.addListener(onBookmarkChanged);
+chrome.bookmarks.onChanged.addListener(onBookmarkChanged);
+
+window.addEventListener("unload", e => {
+  chrome.bookmarks.onCreated.removeListener(onBookmarkChanged);
+  chrome.bookmarks.onChanged.removeListener(onBookmarkChanged);
+}, false);
+
+function onBookmarkChanged(id, bm) {
+  if(!document.hidden) {
+    if(bm.url === chrome.runtime.getURL("redirect.htm")) {
+      chrome.bookmarks.update(id, {
+        url: url.origin,
+        title: chrome.i18n.getMessage("bookmarkTitle", url.host)
+      });
+    }
+  }
+}
 
 function leavePage(alt) {
   if(url) {
