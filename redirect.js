@@ -61,7 +61,7 @@ function init(data, firstVisit) {
     //if the user is visiting this page for the first time then we can 
     //redirect them automatically if needed. But if they clicked "back" 
     //to revisit this page then don't redirect them.
-    if(firstVisit) {
+    if(firstVisit && chrome.bookmarks) {
       //if the domain is found in bookmarks then assume it is trusted and
       //redirect the user back to the desired page
       chrome.bookmarks.search(url.origin, list => {
@@ -74,21 +74,25 @@ function init(data, firstVisit) {
 
     //if the user visited this domain multiple times before then we 
     //show a message letting them know
-    chrome.history.search({
-      text: url.origin,
-      startTime: Date.now()-365*24*60*60000,
-      endTime: Date.now()-60000,
-      maxResults: 10
-    }, list => {
-      if(list && list.length > 0) {
-        $("visitCount").textContent = chrome.i18n.getMessage(
-          (list.length >= 10 ? "visitCountMany" : list.length > 1 ? "visitCountSome" : "visitCountOne"),
-          "" + list.length
-        );
-      } else {
-        $("visitCount").textContent = chrome.i18n.getMessage("visitCountNone");
-      }
-    });
+    if(chrome.history) {  //history not available on Mobile
+      chrome.history.search({
+        text: url.origin,
+        startTime: Date.now()-365*24*60*60000,
+        endTime: Date.now()-60000,
+        maxResults: 10
+      }, list => {
+        if(list && list.length > 0) {
+          $("visitCount").textContent = chrome.i18n.getMessage(
+            (list.length >= 10 ? "visitCountMany" : list.length > 1 ? "visitCountSome" : "visitCountOne"),
+            "" + list.length
+          );
+        } else {
+          $("visitCount").textContent = chrome.i18n.getMessage("visitCountNone");
+        }
+      });
+    } else {
+      $("visitStats").hidden = true;
+    }
 
     if(/(^|\.)\w{2,3}\.\w{2}$/.test(url.hostname)) {
       //attempt to capture these domains: msn.uk, longdomain.co.uk, longdomain.org.uk
