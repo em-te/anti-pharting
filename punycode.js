@@ -1,5 +1,6 @@
 //Author <some@domain.name> released below code into the public domain on Nov 19, 2008
 //From: https://stackoverflow.com/questions/183485/converting-punycode-with-dash-character-to-unicode
+//https://creativecommons.org/publicdomain/zero/1.0/
 
 function decodeUTF16(input/*string*/) {
   let output = [], i = 0;
