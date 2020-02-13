@@ -19,6 +19,8 @@ let bypass = {};
 chrome.webRequest.onBeforeSendHeaders.addListener(
   ({method, originUrl, requestHeaders, requestId, tabId, url}) => {
 
+    //only listen to GET requests because most attacks aren't 
+    //sophisticated enough to perform POST
     if(method !== "GET") return;
 
     url = new URL(url);
@@ -36,7 +38,7 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
       let referer = bypass[tabStr].referer;
       bypass[tabStr].referer = null;
 
-      //restore the referer during bypass if available
+      //restore the referer during bypass if exists
       if(referer) {
         let found = false;
         for(let h of requestHeaders) {
@@ -94,8 +96,8 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
     }
 
   }, {
-    urls: ["*://*/*@*", "*://*/*%40*"],
-    types: ["main_frame"]
+    urls: ["*://*/*@*", "*://*/*%40*"],  //only listen for URLs with "@" in the URL path
+    types: ["main_frame"]  //only listen for URLs that load as a top-level page
   }, ["blocking", "requestHeaders"]
 );
 
