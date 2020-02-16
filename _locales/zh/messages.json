@@ -1,0 +1,57 @@
+{
+  "extensionName": {
+    "message": "PhartShield"
+  },
+
+  "extensionDescription": {
+    "message": "PhartShield提供實時保護，以防止偽裝攻擊和其他互聯網危害，並可以離線保護您的身份"
+  },
+
+  "youAreOpeningUrl": {
+    "message": "您正在嘗試訪問此地址："
+  },
+
+  "theWebsiteIsAtDomain": {
+    "message": "該網站位於："
+  },
+
+  "visitCountNone": {
+    "message": "您以前從未訪問過此站點。"
+  },
+
+  "visitCountOne": {
+    "message": "您最近訪問過$1次。"
+  },
+
+  "visitCountSome": {
+    "message": "您最近訪問過$1次。"
+  },
+
+  "visitCountMany": {
+    "message": "您最近訪問過這多次。"
+  },
+
+  "yourEmailsWillBeShared": {
+    "message": "如果您繼續，該郵件地址將與網站共享："
+  },
+
+  "goBtn": {
+    "message": "繼續"
+  },
+
+  "replaceBtn": {
+    "message": 繼續屏假裝為'$1'"
+  },
+
+  "whatispharting": {
+    "message": "什麼是Pharting?"
+  },
+
+  "turnOff": {
+    "message": "關閉PhartShield，直到重新啟動瀏覽器"
+  },
+
+  "bookmarkTitle": {
+    "message": "PhartShield可信賴: $1"
+  }
+}
