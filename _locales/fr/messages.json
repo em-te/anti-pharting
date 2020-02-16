@@ -1,0 +1,57 @@
+{
+  "extensionName": {
+    "message": "PhartShield"
+  },
+
+  "extensionDescription": {
+    "message": "PhartShield offre une protection en temps réel contre les attaques de camouflage et autres méchants Internet et travaille hors ligne pour protéger votre identité."
+  },
+
+  "youAreOpeningUrl": {
+    "message": "Vous essayez d'accéder à cette URL:"
+  },
+
+  "theWebsiteIsAtDomain": {
+    "message": "Ce site Web est situé à:"
+  },
+
+  "visitCountNone": {
+    "message": "Vous n'avez jamais visité ce site auparavant."
+  },
+
+  "visitCountOne": {
+    "message": "Vous avez visité $1 fois récemment."
+  },
+
+  "visitCountSome": {
+    "message": "Vous l'avez visité 1 fois récemment."
+  },
+
+  "visitCountMany": {
+    "message": "Vous l'avez visité plusieurs fois récemment."
+  },
+
+  "yourEmailsWillBeShared": {
+    "message": "Si vous continuez, cette adresse e-mail sera partagée avec le site Web:"
+  },
+
+  "goBtn": {
+    "message": "Continuer"
+  },
+
+  "replaceBtn": {
+    "message": "Continuer masqué comme '$1'"
+  },
+
+  "whatispharting": {
+    "message": "Qu'est-ce que Pharting?"
+  },
+
+  "turnOff": {
+    "message": "Désactiver PhartShield jusqu'au redémarrage du navigateur"
+  },
+
+  "bookmarkTitle": {
+    "message": "PhartShield de confiance: $1"
+  }
+}
