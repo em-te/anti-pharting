@@ -1,0 +1,57 @@
+{
+  "extensionName": {
+    "message": "PhartShield"
+  },
+
+  "extensionDescription": {
+    "message": "PhartShield ofrece protección en tiempo real contra ataques de pharting y otras molestias de Internet y funciona sin conexión para proteger su identidad."
+  },
+
+  "youAreOpeningUrl": {
+    "message": "Está intentando acceder a esta URL:"
+  },
+
+  "theWebsiteIsAtDomain": {
+    "message": "Ese sitio web está ubicado en:"
+  },
+
+  "visitCountNone": {
+    "message": "Nunca ha visitado este sitio antes."
+  },
+
+  "visitCountOne": {
+    "message": "Has visitado esto $1 vez recientemente."
+  },
+
+  "visitCountSome": {
+    "message": "Has visitado esto $1 veces recientemente."
+  },
+
+  "visitCountMany": {
+    "message": "Has visitado esto muchas veces recientemente."
+  },
+
+  "yourEmailsWillBeShared": {
+    "message": "Si continúa, esta dirección de correo electrónico se compartirá con el sitio web:"
+  },
+
+  "goBtn": {
+    "message": "Continuar"
+  },
+
+  "replaceBtn": {
+    "message": "Continuar enmascarado como '$1'"
+  },
+
+  "whatispharting": {
+    "message": "¿Qué es Pharting?"
+  },
+
+  "turnOff": {
+    "message": "Apague PhartShield hasta que se reinicie el navegador"
+  },
+
+  "bookmarkTitle": {
+    "message": "PhartShield De confianza: $1"
+  }
+}
