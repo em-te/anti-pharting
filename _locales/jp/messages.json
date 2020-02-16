@@ -52,6 +52,6 @@
   },
 
   "bookmarkTitle": {
-    "message": "PhartShieldによる信頼"
+    "message": "PhartShieldによる信頼：$1"
   }
 }
