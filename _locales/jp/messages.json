@@ -1,0 +1,57 @@
+{
+  "extensionName": {
+    "message": "PhartShield"
+  },
+
+  "extensionDescription": {
+    "message": "PhartShieldは、カモフラージュ攻撃やその他のインターネットの悪意からリアルタイムで保護し、オフラインであなたの身元を保護します。"
+  },
+
+  "youAreOpeningUrl": {
+    "message": "このURLにアクセスしようとしています："
+  },
+
+  "theWebsiteIsAtDomain": {
+    "message": "そのWebサイトは次の場所にあります："
+  },
+
+  "visitCountNone": {
+    "message": "あなたは以前にこのサイトを訪れたことがありません。"
+  },
+
+  "visitCountOne": {
+    "message": "最近$1回訪問しました。"
+  },
+
+  "visitCountSome": {
+    "message": "最近$1回これを訪れました。"
+  },
+
+  "visitCountMany": {
+    "message": "最近何度も訪問しました。"
+  },
+
+  "yourEmailsWillBeShared": {
+    "message": "続行すると、このメールアドレスはウェブサイトと共有されます："
+  },
+
+  "goBtn": {
+    "message": "続行"
+  },
+
+  "replaceBtn": {
+    "message": "「$1」としてマスクされたまま続行"
+  },
+
+  "whatispharting": {
+    "message": "Phartingとは？"
+  },
+
+  "turnOff": {
+    "message": "ブラウザが再起動するまでPhartShieldをオフにする"
+  },
+
+  "bookmarkTitle": {
+    "message": "PhartShieldによる信頼"
+  }
+}
