@@ -1,0 +1,57 @@
+{
+  "extensionName": {
+    "message": "PhartShield"
+  },
+
+  "extensionDescription": {
+    "message": "PhartShield biedt realtime bescherming tegen camouflageaanvallen en andere internetgeesten en werkt offline om uw identiteit te bewaken."
+  },
+
+  "youAreOpeningUrl": {
+    "message": "U probeert toegang te krijgen tot deze URL:"
+  },
+
+  "theWebsiteIsAtDomain": {
+    "message": "Die website bevindt zich op:"
+  },
+
+  "visitCountNone": {
+    "message": "U hebt deze site nog nooit eerder bezocht."
+  },
+
+  "visitCountOne": {
+    "message": "U hebt dit onlangs $1 keer bezocht."
+  },
+
+  "visitCountSome": {
+    "message": "U hebt dit onlangs $1 keer bezocht."
+  },
+
+  "visitCountMany": {
+    "message": "U hebt dit recentelijk vele malen bezocht."
+  },
+
+  "yourEmailsWillBeShared": {
+    "message": "Als u doorgaat, wordt dit e-mailadres gedeeld met de website:"
+  },
+
+  "goBtn": {
+    "message": "Doorgaan"
+  },
+
+  "replaceBtn": {
+    "message": "Doorgaan met gemaskeerd als '$1'"
+  },
+
+  "whatispharting": {
+    "message": "Wat is Pharting?"
+  },
+
+  "turnOff": {
+    "message": "PhartShield uitschakelen totdat de browser opnieuw is gestart"
+  },
+
+  "bookmarkTitle": {
+    "message": "PhartShield vertrouwd: $1"
+  }
+}
