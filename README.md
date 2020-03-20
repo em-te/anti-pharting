@@ -10,11 +10,11 @@ PhartShield offers real-time protection against pharting attacks and other Inter
 
 - Other "shields" and "blockers" only block potential attacks and don't offer remedies. Users given the choice to continue or stop may be tempted to continue, simply out of inertia. Phart shield allows users to continue using a fake persona so that curious users can satisfy their curiosity while minimizing the risk to them.
 
-- PhartShield offloads the initial pattern matching to the browser to minimize resource usage and extend battery life.
+- PhartShield offloads the initial pattern matching to the browser to minimize resource usage which helps extend battery life. Only after the browser has found a probably match based on PhartShield's criteria will it call up PhartShield. This helps alleviate concerns that the app is slowing down everything.
 
-- PhartShield conforms to accessibility guidelines and is screen reader ready and keyboard ready.
+- PhartShield conforms to accessibility guidelines and is screen reader ready and keyboard accessible.
 
-- PhartShield is Open Source.
+- PhartShield's source code is Open Source.
 
 ## Why
 
