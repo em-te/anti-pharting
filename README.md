@@ -1,4 +1,4 @@
-# ![appicon](https://raw.githubusercontent.com/em-te/anti-pharting/master/icon_24.png) PhartShield
+# ![icon](https://raw.githubusercontent.com/em-te/anti-pharting/master/icon_24.png) PhartShield
 
 PhartShield offers real-time protection against pharting attacks and other Internet nasties.
 
@@ -16,16 +16,16 @@ PhartShield offers real-time protection against pharting attacks and other Inter
 
 - PhartShield's source code is Open Source.
 
-## Why
+## Why use PhartShield
 
 Pharting is no laughing matter. From something as simple as exposing your private health conditions to something as serious as jeopardizing a multi-million dollar business deal, pharting affects us all in a very personal way. Victims of pharting should not shy away from crowds or attempt to camouflage the ordeal. This will only serve to make pharters more bold. The first step to fixing the problem is accepting that it is a problem. Only then can the healing begin. PhartShield was created to carry this mantle and put the tools into the hands of those who need it.
 
-## Download
+## Download PhartShield
 
 - Download for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/phart-shield/)
 - Download for [Chrome](https://chrome.google.com/webstore/detail/phartshield/lalgbohkngchihgnebgimcmnkpjmafin)
 
-## Further Reading
-- https://github.com/em-te/anti-pharting/wiki/Pharting
-- http://en.wikipedia.org/wiki/Email_spoofing
-- http://en.wikipedia.org/wiki/Phishing
+## Learn about Phishing
+- [Phishing](http://en.wikipedia.org/wiki/Phishing)
+- [Pharting](https://github.com/em-te/anti-pharting/wiki/Pharting)
+- [Email spoofing](http://en.wikipedia.org/wiki/Email_spoofing)
