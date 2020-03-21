@@ -22,7 +22,7 @@ Pharting is no laughing matter. From something as simple as exposing your privat
 
 ## Why the name?
 
-We know. Countless people have brought it to our attention that the we should have called it "PhartShield Security Suite" or "PhartShield Origins" but we chose to stick with our gut feeling and call it "PhartShield". Plus "PhartGuard" was already taken and "PhartBlocker" just sounds nasty.
+We know. Countless people have brought it to our attention that the we should have called it "PhartShield Security Suite" or "PhartShield Origins" but we chose to stick with our gut feeling and call it "PhartShield". Plus "PhartGuard" was already taken and "PhartBlocker" sounds like an unpolished term.
 
 ## Download
 
