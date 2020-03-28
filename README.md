@@ -20,6 +20,11 @@ PhartShield offers real-time protection against pharting attacks and other Inter
 
 Pharting is no laughing matter. From something as simple as exposing your private health conditions to something as serious as jeopardizing a multi-million dollar business deal, pharting affects us all in a very personal way. Victims of pharting should not shy away from crowds or attempt to camouflage the ordeal. This will only serve to make pharters more bold. The first step to fixing the problem is accepting that it is a problem. Only then can the healing begin. PhartShield was created to carry this mantle and put the tools into the hands of those who need it.
 
+## Example
+
+Attacks look convincing to the untrained eye:
+![Screenshot of webpage performing Pharting attack](https://raw.githubusercontent.com/em-te/anti-pharting/master/screenshot.png)
+
 ## Why the name?
 
 We know. Countless people have brought it to our attention that the we should have called it "PhartShield Security Suite" or "PhartShield Origins" but we chose to stick with our gut feeling and call it "PhartShield". Plus "PhartGuard" was already taken and "PhartBlocker" sounds like an unpolished term.
