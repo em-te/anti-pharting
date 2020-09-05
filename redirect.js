@@ -65,13 +65,14 @@ function init(data, firstVisit) {
     //if the user is visiting this page for the first time then we can 
     //redirect them automatically if needed. But if they clicked "back" 
     //to revisit this page then don't redirect them.
-    if(firstVisit && chrome.bookmarks) {
-      //if the domain is found in bookmarks then assume it is trusted and
-      //redirect the user back to the desired page
+    if(chrome.bookmarks) {
+      //if the domain is found in bookmarks then assume it is trusted
       chrome.bookmarks.search(url.origin, list => {
         if(list && list.length > 0) {
-          $("actions").style.display = "none";
-          leavePage();
+          $("redirect").hidden = false;
+          $("actions").hidden = true;
+          //redirect the user back to the desired page
+          if(firstVisit) leavePage();
         }
       });
     }
@@ -87,7 +88,7 @@ function init(data, firstVisit) {
       }, list => {
         if(list && list.length > 0) {
           $("visitCount").textContent = chrome.i18n.getMessage(
-            (list.length >= 10 ? "visitCountMany" : list.length > 1 ? "visitCountSome" : "visitCountOne"),
+            (list.length >= 10 ? (chrome.bookmarks ? "visitCountManyCanBookmark" : "visitCountMany") : list.length > 1 ? "visitCountSome" : "visitCountOne"),
             "" + list.length
           );
         } else {
@@ -143,6 +144,9 @@ window.addEventListener("unload", e => {
 }, false);
 
 function onBookmarkChanged(id, bm) {
+  //if the user bookmarks the current page (the extensions page) we 
+  //replace it with the actual URL that was blocked.
+  //Only do this if the current tab is the top most tab.
   if(!document.hidden) {
     if(bm.url === chrome.runtime.getURL("redirect.htm")) {
       chrome.bookmarks.update(id, {

@@ -15,8 +15,16 @@
     "message": "Ce site Web est situé à:"
   },
 
+  "checkingHistory": {
+    "message": "Vérification de votre historique..."
+  },
+
+  "goingToUrl": {
+    "message": "Trouvé dans vos favoris. Naviguez maintenant vers l'URL..."
+  },
+
   "visitCountNone": {
-    "message": "Vous n'avez jamais visité ce site auparavant."
+    "message": "Vous n'avez jamais visité ce site auparavant!"
   },
 
   "visitCountOne": {
@@ -29,6 +37,10 @@
 
   "visitCountMany": {
     "message": "Vous l'avez visité plusieurs fois récemment."
+  },
+
+  "visitCountManyCanBookmark": {
+    "message": "Vous l'avez visité plusieurs fois récemment. Ajoutez-le à vos signets pour sauter cette page Web."
   },
 
   "yourEmailsWillBeShared": {

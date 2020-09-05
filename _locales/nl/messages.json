@@ -15,8 +15,16 @@
     "message": "Die website bevindt zich op:"
   },
 
+  "checkingHistory": {
+    "message": "Het controleren van uw geschiedenis..."
+  },
+
+  "goingToUrl": {
+    "message": "Gevonden in uw bladwijzers. Nu navigeren naar URL..."
+  },
+
   "visitCountNone": {
-    "message": "U hebt deze site nog nooit eerder bezocht."
+    "message": "U hebt deze site nog nooit eerder bezocht!"
   },
 
   "visitCountOne": {
@@ -29,6 +37,10 @@
 
   "visitCountMany": {
     "message": "U hebt dit recentelijk vele malen bezocht."
+  },
+
+  "visitCountManyCanBookmark": {
+    "message": "U hebt dit recentelijk vele malen bezocht. Voeg het toe aan uw bladwijzers om deze webpagina over te slaan."
   },
 
   "yourEmailsWillBeShared": {

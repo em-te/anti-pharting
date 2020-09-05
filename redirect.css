@@ -1,6 +1,7 @@
 html, body, h1, h2, h3, header, section, footer {margin: 0; padding: 0}
-body, h1, h2, h3, button {font:normal 1em Helvetica}
+body, h1, h2, h3, button {font:normal 11pt Helvetica}
 body {background:#ddd; line-height: 1.2em}
+*[hidden] {display: none}
 main {
   margin: 0 auto;
   max-width: 1024px;
@@ -25,12 +26,13 @@ h2 {
   margin: 4px 10px;
   width: 1.8em; 
   height: 1.8em; 
-  font: bold 35pt/1.8em Helvetica;
+  font: normal 35pt/1.8em Helvetica;
   text-align: center; 
   border-radius: 50%; 
   background:#fff linear-gradient(175deg, #fff 25%, #ccc 100%);
   border: 1px solid #bbb;
   box-shadow: 1px 1px 5px #ccc;
+  cursor: default;
 }
 section {
   margin: 2%;
@@ -42,18 +44,12 @@ section {
 }
 
 #visitStats {
-  margin-top: 0.7em;
-  color: #999;
-  font-size: 11pt;
+  margin-top: 0.8em;
+  font-size: 1.1em;
+  color: #666;
 }
 
-section#actions {
-  display: flex; 
-  flex-flow: column wrap; 
-  align-items: stretch;
-}
-
-code#url {
+addr#url {
   display: block;
   max-height: 2.4em;
   overflow: auto;
@@ -67,11 +63,11 @@ code#url {
   text-align: left;
 }
 
-code#url:focus {
+addr#url:focus {
   max-height: none;
 }
 
-code#shortDomain {
+addr#shortDomain {
   word-break: break-all;
   background: #f4f4f4;
   padding: 0.2em 1em;
@@ -86,7 +82,7 @@ code#shortDomain {
   color: #bbb;
 }
 
-code.email {
+addr.email {
   background: #f4f4f4;
   padding: 0.2em 0.5em;
   margin-right: 0.1em;
@@ -96,13 +92,14 @@ code.email {
   line-height: 2.5em;
 }
 
-section#actions {
-  display: flex;
-  flex-flow: column nowrap;
+section#actions > nav {
+  display: flex; 
+  flex-flow: column wrap; 
   align-items: stretch;
+  padding: 0 5%;
 }
 
-section#actions button {
+section#actions > nav > button {
   padding: 0.5em 1em;
   margin: 0.5em 2%;
 }
