@@ -15,8 +15,16 @@
     "message": "Ese sitio web está ubicado en:"
   },
 
+  "checkingHistory": {
+    "message": "Comprobando su historial..."
+  },
+
+  "goingToUrl": {
+    "message": "Encontrado en tus marcadores. Ahora navegando a URL..."
+  },
+
   "visitCountNone": {
-    "message": "Nunca ha visitado este sitio antes."
+    "message": "Nunca ha visitado este sitio antes!"
   },
 
   "visitCountOne": {
@@ -29,6 +37,10 @@
 
   "visitCountMany": {
     "message": "Has visitado esto muchas veces recientemente."
+  },
+
+  "visitCountManyCanBookmark": {
+    "message": "Has visitado esto muchas veces recientemente. Añádalo a sus marcadores para omitir esta página web."
   },
 
   "yourEmailsWillBeShared": {

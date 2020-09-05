@@ -15,8 +15,16 @@
     "message": "該網站位於："
   },
 
+  "checkingHistory": {
+    "message": "檢查您的歷程記錄..."
+  },
+
+  "goingToUrl": {
+    "message": "在您的書籤中找到。 現在導航到URL..."
+  },
+
   "visitCountNone": {
-    "message": "您以前從未訪問過此站點。"
+    "message": "您以前從未訪問過此站點！"
   },
 
   "visitCountOne": {
@@ -29,6 +37,10 @@
 
   "visitCountMany": {
     "message": "您最近訪問過這多次。"
+  },
+
+  "visitCountManyCanBookmark": {
+    "message": "您最近訪問過這多次。將其添加到書簽以跳過此網頁。"
   },
 
   "yourEmailsWillBeShared": {

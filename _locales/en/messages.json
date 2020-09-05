@@ -15,8 +15,16 @@
     "message": "That website is located at:"
   },
 
+  "checkingHistory": {
+    "message": "Checking your history..."
+  },
+
+  "goingToUrl": {
+    "message": "Found in your bookmarks. Now navigating to URL..."
+  },
+
   "visitCountNone": {
-    "message": "You have never visited this site before."
+    "message": "You have never visited this site before!"
   },
 
   "visitCountOne": {
@@ -29,6 +37,10 @@
 
   "visitCountMany": {
     "message": "You have visited this many times recently."
+  },
+
+  "visitCountManyCanBookmark": {
+    "message": "You have visited this many times recently. Add it to your bookmarks to skip this webpage."
   },
 
   "yourEmailsWillBeShared": {

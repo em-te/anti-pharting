@@ -15,8 +15,16 @@
     "message": "Diese Website befindet sich unter:"
   },
 
+  "checkingHistory": {
+    "message": "Überprüfen Des Verlaufs..."
+  },
+
+  "goingToUrl": {
+    "message": "Gefunden in Ihren Lesezeichen. Navigieren Sie jetzt zur URL ..."
+  },
+
   "visitCountNone": {
-    "message": "Sie haben diese Site noch nie besucht."
+    "message": "Sie haben diese Site noch nie besucht!"
   },
 
   "visitCountOne": {
@@ -29,6 +37,10 @@
 
   "visitCountMany": {
     "message": "Sie haben dies in letzter Zeit oft besucht."
+  },
+
+  "visitCountManyCanBookmark": {
+    "message": "Sie haben dies in letzter Zeit oft besucht. Fügen Sie es Zu Ihren Lesezeichen hinzu, um diese Webseite zu überspringen."
   },
 
   "yourEmailsWillBeShared": {
